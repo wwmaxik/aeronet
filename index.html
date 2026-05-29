@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AeroNet VPN</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  width: 100%;
+  max-width: 800px;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #888;
+  line-height: 1.6;
+}
+.badge {
+  display: inline-block;
+  background: rgba(123, 47, 247, 0.2);
+  border: 1px solid rgba(123, 47, 247, 0.4);
+  color: #b388ff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+.feature {
+  background: #12121a;
+  border: 1px solid #1e1e2e;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.feature .icon { font-size: 2rem; margin-bottom: 8px; }
+.feature h3 { font-size: 1rem; margin-bottom: 4px; }
+.feature p { font-size: 0.85rem; color: #666; }
+.protocols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 20px 0 32px;
+}
+.protocol {
+  background: #1a1a2e;
+  color: #b388ff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-family: monospace;
+  border: 1px solid #2a2a4e;
+}
+.subscribe {
+  background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+  border: none;
+  color: #fff;
+  padding: 16px 48px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 12px;
+}
+.subscribe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(123, 47, 247, 0.4);
+}
+.link-box {
+  background: #12121a;
+  border: 1px solid #1e1e2e;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+.link-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #e0e0e0;
+  font-size: 0.85rem;
+  font-family: monospace;
+  outline: none;
+}
+.link-box button {
+  background: #2a2a4e;
+  border: none;
+  color: #b388ff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.link-box button:hover { background: #3a3a5e; }
+.status-bar {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.status-item {
+  text-align: center;
+}
+.status-item .num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00d4ff;
+}
+.status-item .label {
+  font-size: 0.8rem;
+  color: #666;
+}
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #444;
+}
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  border: 1px solid #2a2a4e;
+  color: #e0e0e0;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">&#9889; Updated every 4 hours</div>
+  <h1>AeroNet</h1>
+  <p>Быстрый и надёжный VPN. Работает там, где другие нет.</p>
+
+  <div class="protocols" id="protocols"></div>
+
+  <button class="subscribe" onclick="copySub()">&#128279; Копировать ссылку на подписку</button>
+
+  <div class="link-box">
+    <input type="text" id="subUrl" value="https://wwmaxik.ru/sub.txt" readonly>
+    <button onclick="copySub()">Копировать</button>
+  </div>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <div class="icon">&#127760;</div>
+    <h3>30+ стран</h3>
+    <p>Сервера по всему миру с оптимальным路由ингом</p>
+  </div>
+  <div class="feature">
+    <div class="icon">&#9889;</div>
+    <h3>Все протоколы</h3>
+    <p>VLESS, VMess, Trojan, Shadowsocks, Hysteria2, TUIC</p>
+  </div>
+  <div class="feature">
+    <div class="icon">&#128274;</div>
+    <h3>Шифрование</h3>
+    <p>TLS, Reality — защита от DPI и блокировок</p>
+  </div>
+  <div class="feature">
+    <div class="icon">&#128225;</div>
+    <h3>Авто-тест</h3>
+    <p>Каждый конфиг проверяется на работоспособность</p>
+  </div>
+</div>
+
+<div class="status-bar" id="statusBar">
+  <div class="status-item"><div class="num" id="configCount">-</div><div class="label">Рабочих конфигов</div></div>
+  <div class="status-item"><div class="num" id="countryCount">-</div><div class="label">Стран</div></div>
+</div>
+
+<div class="footer">AeroNet VPN &mdash; открытая подписка для всех</div>
+<div class="toast" id="toast">Скопировано!</div>
+
+<script>
+async function loadStats() {
+  try {
+    const r = await fetch('/sub.txt');
+    const text = await r.text();
+    const lines = text.split('\n').filter(l => l && !l.startsWith('#'));
+    document.getElementById('configCount').textContent = lines.length;
+
+    const countries = new Set();
+    for (const line of lines) {
+      const name = decodeURIComponent(line.split('#').pop() || '');
+      for (const ch of name) {
+        if (ch.codePointAt(0) >= 0x1F1E6 && ch.codePointAt(0) <= 0x1F1FF) {
+          countries.add(ch);
+        }
+      }
+    }
+    document.getElementById('countryCount').textContent = countries.size;
+
+    const protos = new Set();
+    for (const line of lines) {
+      const proto = line.split('://')[0].split(':')[0];
+      protos.add(proto);
+    }
+    const container = document.getElementById('protocols');
+    container.innerHTML = '';
+    for (const p of protos) {
+      const el = document.createElement('span');
+      el.className = 'protocol';
+      el.textContent = p;
+      container.appendChild(el);
+    }
+  } catch {}
+}
+loadStats();
+
+function copySub() {
+  const input = document.getElementById('subUrl');
+  input.select();
+  navigator.clipboard.writeText(input.value).catch(() => {});
+  const toast = document.getElementById('toast');
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2000);
+}
+</script>
+</body>
+</html>

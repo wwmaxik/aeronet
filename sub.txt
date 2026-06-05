@@ -1,7 +1,7 @@
 # profile-title: AeroNet
 # profile-update-interval: 4
-# Date/Time: 2026-06-05 / 19:00 (Moscow)
-# Количество: 31
+# Date/Time: 2026-06-05 / 19:45 (Moscow)
+# Количество: 33
 # =============================================
 
 vless://ab268dc7-510f-4fb9-ace4-b7305a59c7bb@78.17.103.57.blanesik.space:443?type=grpc&headerType=none&security=tls&encryption=none&sni=78.17.103.57.blanesik.space&fp=chrome&alpn=h2&serviceName=/sequre/grpc&insecure=0#%F0%9F%87%A8%F0%9F%87%A6%20AeroNet%20CA%201%2F1
@@ -18,11 +18,13 @@ vless://96eec36e-2c44-5b09-898e-6f0f0526e57f@23.235.42.205:80?mode=auto&path=%2F
 vless://InternetAzadRobot@151.101.128.223:80?encryption=none&security=none&type=xhttp&host=tignaltofan.global.ssl.fastly.net&path=%2FTignaliSWithYou&mode=auto&extra=%7B%22mode%22%3A%22auto%22%2C%22scMaxEachPostBytes%22%3A%221000000%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D#%F0%9F%87%AB%F0%9F%87%B7%20AeroNet%20FR%203%2F5
 vless://InternetAzadRobot-AliKiller@151.101.192.223:80?mode=auto&path=/&security=&encryption=none&host=InternetAzadRobot07gt745.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AB%F0%9F%87%B7%20AeroNet%20FR%204%2F5
 vless://InternetAzadRobot@speedtest.net:80?encryption=none&security=none&type=xhttp&host=tignaltofan.global.ssl.fastly.net&path=/TignaliSWithYou&mode=auto&extra={"mode":"auto","scMaxEachPostBytes":"1000000","xPaddingBytes":"100-1000"}#%F0%9F%87%AB%F0%9F%87%B7%20AeroNet%20FR%205%2F5
-vless://17451fec-af94-4715-8c2f-7f6839130d0a@31.76.126.129:2040?security=reality&type=tcp&sni=tradingview.com&fp=qq&sid=53197c66aef53c44&pbk=LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%201%2F6
-vless://478ada59-0a0a-4467-9d76-af3dcbdfd4eb@51.250.106.87:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%202%2F6
-vless://70a76c1e-c6ae-48e0-b52e-753bb571d2cf@51.250.24.222:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%203%2F6
-vless://70a76c1e-c6ae-48e0-b52e-753bb571d2cf@51.250.97.18:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%204%2F6
-vless://96eec36e-2c44-5b09-898e-6f0f0526e57f@146.75.117.91:80?mode=auto&path=/Tignal&security=none&encryption=none&extra={"xPaddingBytes":"100-1000"}&host=tignaltofansv5.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%205%2F6
+vless://17451fec-af94-4715-8c2f-7f6839130d0a@31.76.126.129:2040?security=reality&type=tcp&sni=tradingview.com&fp=qq&sid=53197c66aef53c44&pbk=LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%201%2F8
+vless://478ada59-0a0a-4467-9d76-af3dcbdfd4eb@51.250.102.69:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%202%2F8
+vless://478ada59-0a0a-4467-9d76-af3dcbdfd4eb@51.250.106.87:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%203%2F8
+vless://70a76c1e-c6ae-48e0-b52e-753bb571d2cf@51.250.108.162:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%204%2F8
+vless://70a76c1e-c6ae-48e0-b52e-753bb571d2cf@51.250.24.222:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%205%2F8
+vless://70a76c1e-c6ae-48e0-b52e-753bb571d2cf@51.250.97.18:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=safari&sni=cdp.x5.ru&pbk=wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI&sid=8ec792bfd725be8a#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%206%2F8
+vless://96eec36e-2c44-5b09-898e-6f0f0526e57f@146.75.117.91:80?mode=auto&path=/Tignal&security=none&encryption=none&extra={"xPaddingBytes":"100-1000"}&host=tignaltofansv5.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AC%F0%9F%87%A7%20AeroNet%20GB%207%2F8
 vless://d44724a9-0c88-4437-9f88-e1f86aa32e25@hk01.jgpy.help:21002?type=tcp&encryption=none&headerType=none&quicSecurity=none&security=reality&flow=xtls-rprx-vision&fp=chrome&insecure=1&sni=apple.com&pbk=bSOQYFrQsIYbG5k6-n8aykU2CUQAT67jgVBhP89e_xE&sid=cccb9907#%F0%9F%87%AD%F0%9F%87%B0%20AeroNet%20HK%201%2F1
 vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@82.202.156.143:8443?allowInsecure=0&sni=cdn7-09.vk-cdnvideo.com&fp=chrome&security=tls#%F0%9F%87%AD%F0%9F%87%BA%20AeroNet%20HU%201%2F1
 vless://785c7771-8d7f-48ca-bbc2-1a22e360d4d0@2.26.88.118:8443?type=grpc&headerType=none&security=reality&encryption=none&fp=chrome&pbk=TdT90qbeyM7WO0QCztOhKDGKOi2qaFFif0hO0cfK1E4&sid=ea1058117be12087&spx=%2F&serviceName=max.ru#%F0%9F%87%B1%F0%9F%87%BB%20AeroNet%20LV%201%2F1

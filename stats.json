@@ -1,27 +1,14 @@
 {
-  "update_time": "2026-06-25 13:30:40",
-  "update_time_msk": "25.06.2026 13:30 MSK",
-  "total_configs": 2,
-  "total_raw": 266145,
-  "total_reachable": 2,
-  "total_unreachable": 266143,
+  "update_time": "2026-06-25 13:37:41",
+  "update_time_msk": "25.06.2026 13:37 MSK",
+  "total_configs": 0,
+  "total_raw": 0,
+  "total_reachable": 0,
+  "total_unreachable": 0,
   "source_stats": {
-    "igareck": 269,
-    "ebrasha": 265876
+    "igareck": 0,
+    "ebrasha": 0
   },
-  "protocol_stats": {
-    "vless": 1,
-    "trojan": 1
-  },
-  "countries": [
-    {
-      "code": "BR",
-      "name": "Brazil",
-      "total": 2,
-      "protocols": {
-        "vless": 1,
-        "trojan": 1
-      }
-    }
-  ]
+  "protocol_stats": {},
+  "countries": []
 }

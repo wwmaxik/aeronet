@@ -1,267 +1,429 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AeroNet VPN</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: #0a0a0f;
-  color: #e0e0e0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hero {
-  text-align: center;
-  padding: 80px 20px 40px;
-  width: 100%;
-  max-width: 800px;
-}
-.hero h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #00d4ff, #7b2ff7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 12px;
-}
-.hero p {
-  font-size: 1.2rem;
-  color: #888;
-  line-height: 1.6;
-}
-.badge {
-  display: inline-block;
-  background: rgba(123, 47, 247, 0.2);
-  border: 1px solid rgba(123, 47, 247, 0.4);
-  color: #b388ff;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  margin-bottom: 20px;
-}
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  width: 100%;
-  max-width: 800px;
-  padding: 0 20px;
-  margin-bottom: 40px;
-}
-.feature {
-  background: #12121a;
-  border: 1px solid #1e1e2e;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-}
-.feature .icon { font-size: 2rem; margin-bottom: 8px; }
-.feature h3 { font-size: 1rem; margin-bottom: 4px; }
-.feature p { font-size: 0.85rem; color: #666; }
-.protocols {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin: 20px 0 32px;
-}
-.protocol {
-  background: #1a1a2e;
-  color: #b388ff;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-family: monospace;
-  border: 1px solid #2a2a4e;
-}
-.subscribe {
-  background: linear-gradient(135deg, #7b2ff7, #00d4ff);
-  border: none;
-  color: #fff;
-  padding: 16px 48px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  margin-bottom: 12px;
-}
-.subscribe:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(123, 47, 247, 0.4);
-}
-.link-box {
-  background: #12121a;
-  border: 1px solid #1e1e2e;
-  border-radius: 8px;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto 20px;
-}
-.link-box input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  color: #e0e0e0;
-  font-size: 0.85rem;
-  font-family: monospace;
-  outline: none;
-}
-.link-box button {
-  background: #2a2a4e;
-  border: none;
-  color: #b388ff;
-  padding: 6px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  white-space: nowrap;
-}
-.link-box button:hover { background: #3a3a5e; }
-.status-bar {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 32px;
-  flex-wrap: wrap;
-}
-.status-item {
-  text-align: center;
-}
-.status-item .num {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #00d4ff;
-}
-.status-item .label {
-  font-size: 0.8rem;
-  color: #666;
-}
-.footer {
-  margin-top: auto;
-  padding: 20px;
-  font-size: 0.8rem;
-  color: #444;
-}
-.toast {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1a1a2e;
-  border: 1px solid #2a2a4e;
-  color: #e0e0e0;
-  padding: 10px 24px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: none;
-}
-.toast.show { opacity: 1; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroNet VPN</title>
+    <meta name="description" content="AeroNet VPN - Free VPN Configs Aggregator">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --card: #12121a;
+            --border: #1e1e2e;
+            --accent: #6c5ce7;
+            --accent2: #00cec9;
+            --text: #e0e0e0;
+            --text-dim: #888;
+            --green: #00b894;
+            --red: #d63031;
+            --orange: #fdcb6e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .bg-grid {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image:
+                linear-gradient(rgba(108,92,231,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(108,92,231,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            letter-spacing: -2px;
+        }
+        .subtitle {
+            color: var(--text-dim);
+            font-size: 14px;
+        }
+        .pulse {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0,184,148,0.4); }
+            70% { box-shadow: 0 0 0 8px rgba(0,184,148,0); }
+            100% { box-shadow: 0 0 0 0 rgba(0,184,148,0); }
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin: 30px 0;
+        }
+        .stat-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-dim);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        .protocols-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .proto-chip {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: border-color 0.2s;
+        }
+        .proto-chip:hover {
+            border-color: var(--accent);
+        }
+        .proto-name {
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        .proto-count {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent2);
+        }
+        .proto-bar {
+            height: 3px;
+            border-radius: 2px;
+            background: var(--border);
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .proto-bar-fill {
+            height: 100%;
+            border-radius: 2px;
+            transition: width 1s ease;
+        }
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+        }
+        .country-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .country-card:hover {
+            border-color: var(--accent);
+            transform: translateX(4px);
+        }
+        .country-flag {
+            font-size: 28px;
+            width: 36px;
+            text-align: center;
+        }
+        .country-info {
+            flex: 1;
+        }
+        .country-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .country-code {
+            color: var(--text-dim);
+            font-size: 11px;
+        }
+        .country-count {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent2);
+        }
+        .country-protocols {
+            display: flex;
+            gap: 6px;
+            margin-top: 6px;
+        }
+        .country-proto {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(108,92,231,0.15);
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+        .sources {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .source-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 20px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .source-name {
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .source-count {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent2);
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-dim);
+            font-size: 12px;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        .copy-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 12px;
+            transition: opacity 0.2s;
+        }
+        .copy-btn:hover { opacity: 0.8; }
+        .sub-link {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            word-break: break-all;
+        }
+        .sub-link input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+        }
+        @media (max-width: 600px) {
+            .logo { font-size: 32px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .countries-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
+    <div class="bg-grid"></div>
+    <div class="container">
+        <header>
+            <div class="logo">AeroNet</div>
+            <div class="subtitle"><span class="pulse"></span>VPN Configs Aggregator</div>
+        </header>
 
-<div class="hero">
-  <div class="badge">&#9889; Updated every 4 hours</div>
-  <h1>AeroNet</h1>
-  <p>Быстрый и надёжный VPN. Работает там, где другие нет.</p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Live Configs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">266145</div>
+                <div class="stat-label">Raw Parsed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Protocols</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0%</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+        </div>
 
-  <div class="protocols" id="protocols"></div>
+        <div class="sub-link">
+            <input type="text" id="subUrl" value="https://wwmaxik.github.io/aeronet/sub.txt" readonly>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('subUrl').value).then(()=>this.textContent='Copied!')">Copy Link</button>
+        </div>
 
-  <button class="subscribe" onclick="copySub()">&#128279; Копировать ссылку на подписку</button>
+        <div class="section">
+            <div class="section-title">Protocols</div>
+            <div class="protocols-bar" id="protocols"></div>
+        </div>
 
-  <div class="link-box">
-    <input type="text" id="subUrl" value="https://wwmaxik.ru/sub.txt" readonly>
-    <button onclick="copySub()">Копировать</button>
-  </div>
-</div>
+        <div class="section">
+            <div class="section-title">Countries</div>
+            <div class="countries-grid" id="countries"></div>
+        </div>
 
-<div class="features">
-  <div class="feature">
-    <div class="icon">&#127760;</div>
-    <h3>30+ стран</h3>
-    <p>Сервера по всему миру с оптимальной маршрутизацией</p>
-  </div>
-  <div class="feature">
-    <div class="icon">&#9889;</div>
-    <h3>Все протоколы</h3>
-    <p>VLESS, VMess, Trojan, Shadowsocks, Hysteria2, TUIC</p>
-  </div>
-  <div class="feature">
-    <div class="icon">&#128274;</div>
-    <h3>Шифрование</h3>
-    <p>TLS, Reality — защита от DPI и блокировок</p>
-  </div>
-  <div class="feature">
-    <div class="icon">&#128225;</div>
-    <h3>Авто-тест</h3>
-    <p>Каждый конфиг проверяется на работоспособность</p>
-  </div>
-</div>
+        <div class="section">
+            <div class="section-title">Sources</div>
+            <div class="sources" id="sources"></div>
+        </div>
 
-<div class="status-bar" id="statusBar">
-  <div class="status-item"><div class="num" id="configCount">-</div><div class="label">Рабочих конфигов</div></div>
-  <div class="status-item"><div class="num" id="countryCount">-</div><div class="label">Стран</div></div>
-</div>
+        <div class="footer">
+            <p>Last updated: 25.06.2026 13:30 MSK</p>
+            <p>AeroNet Config Aggregator</p>
+        </div>
+    </div>
 
-<div class="footer">AeroNet VPN &mdash; открытая подписка для всех</div>
-<div class="toast" id="toast">Скопировано!</div>
+    <script>
+        const PROTOCOL_COLORS = {
+            vless: '#6c5ce7',
+            vmess: '#00cec9',
+            trojan: '#fd79a8',
+            ss: '#fdcb6e',
+            hysteria2: '#e17055',
+            tuic: '#00b894'
+        };
 
-<script>
-async function loadStats() {
-  try {
-    const r = await fetch('/sub.txt');
-    const text = await r.text();
-    const lines = text.split('\n').filter(l => l && !l.startsWith('#'));
-    document.getElementById('configCount').textContent = lines.length;
+        const FLAGS = {"BR": "BR"};
 
-    const countries = new Set();
-    for (const line of lines) {
-      const name = decodeURIComponent(line.split('#').pop() || '');
-      for (const ch of name) {
-        if (ch.codePointAt(0) >= 0x1F1E6 && ch.codePointAt(0) <= 0x1F1FF) {
-          countries.add(ch);
+        const protocols = {"vless": 1, "trojan": 1};
+        const countries = [{"code": "BR", "name": "Brazil", "total": 2, "protocols": {"vless": 1, "trojan": 1}}];
+        const sources = {"igareck": 269, "ebrasha": 265876};
+
+        function getFlag(code) {
+            const map = {"🇦🇱": "AC", "🇩🇿": "DZ", "🇦🇷": "AR", "🇦🇲": "AM", "🇦🇺": "AU", "🇦🇹": "AT", "🇦🇿": "ZZ", "🇧🇭": "BH", "🇧🇩": "BF", "🇧🇾": "BY", "🇧🇪": "BE", "🇧🇿": "BZ", "🇧🇴": "BO", "🇧🇦": "BA", "🇧🇷": "BR", "🇧🇳": "BN", "🇧🇬": "BG", "🇰🇭": "KW", "🇨🇦": "CA", "🇨🇱": "CL", "🇨🇳": "CG", "🇨🇴": "CN", "🇨🇷": "HR", "🇭🇷": "HM", "🇨🇺": "CU", "🇨🇾": "CY", "🇨🇿": "CZ", "🇩🇰": "DK", "🇪🇨": "EC", "🇪🇪": "EE", "🇪🇹": "ET", "🇫🇮": "FI", "🇫🇷": "FR", "🇬🇪": "GE", "🇩🇪": "DE", "🇬🇭": "GH", "🇬🇷": "GR", "🇬🇹": "GT", "🇭🇳": "HN", "🇭🇰": "HK", "🇭🇺": "HU", "🇮🇸": "IS", "🇮🇳": "IN", "🇮🇩": "ID", "🇮🇷": "IO", "🇮🇶": "IQ", "🇮🇪": "IE", "🇮🇱": "IL", "🇮🇹": "IT", "🇯🇲": "JM", "🇯🇵": "JP", "🇯🇴": "JO", "🇰🇿": "KZ", "🇰🇪": "KE", "🇰🇼": "KW", "🇰🇬": "KI", "🇱🇻": "LV", "🇱🇧": "LB", "🇱🇹": "LY", "🇱🇺": "LU", "🇲🇾": "MY", "🇲🇹": "MR", "🇲🇽": "MV", "🇲🇩": "MA", "🇲🇨": "MC", "🇲🇳": "MN", "🇲🇪": "ME", "🇲🇦": "MA", "🇲🇿": "MZ", "🇲🇲": "MD", "🇳🇵": "PF", "🇳🇱": "NL", "🇳🇿": "NZ", "🇳🇬": "NG", "🇲🇰": "MK", "🇳🇴": "NO", "🇴🇲": "OM", "🇵🇰": "PK", "🇵🇸": "PS", "🇵🇦": "PA", "🇵🇬": "PG", "🇵🇾": "PY", "🇵🇪": "PE", "🇵🇭": "PH", "🇵🇱": "PL", "🇵🇹": "PT", "🇶🇦": "QA", "🇷🇴": "RO", "🇷🇺": "RU", "🇸🇦": "RE", "🇸🇳": "KR", "🇷🇸": "RU", "🇸🇬": "SC", "🇸🇰": "SG", "🇸🇮": "SI", "🇸🇴": "SK", "🇿🇦": "ZA", "🇰🇷": "KR", "🇪🇸": "EC", "🇱🇰": "LR", "🇸🇩": "MF", "🇸🇪": "CH", "🇨🇭": "KH", "🇸🇾": "SY", "🇹🇼": "TV", "🇹🇯": "TJ", "🇹🇿": "TZ", "🇹🇭": "TH", "🇹🇹": "TT", "🇹🇳": "TN", "🇹🇷": "TR", "🇹🇲": "UM", "🇺🇬": "UG", "🇺🇦": "UA", "🇦🇪": "AE", "🇬🇧": "GB", "🇺🇸": "US", "🇺🇾": "UY", "🇺🇿": "UZ", "🇻🇪": "VE", "🇻🇳": "VN", "🇾🇪": "YE", "🇿🇼": "ZM", "🇪🇺": "EU", "🇦🇸": "AX", "🇦🇴": "AO", "🇦🇬": "AG", "🇦🇼": "AW", "🇧🇧": "BB", "🇧🇸": "BN", "🇨🇲": "CC", "🇨🇻": "CF", "🇨🇵": "CO", "🇨🇪": "CR", "🇨🇼": "CW", "🇩🇬": "DJ", "🇩🇴": "DK", "🇪🇷": "ER", "🇫🇰": "FJ", "🇬🇦": "GA", "🇬🇲": "GM", "🇬🇮": "GI", "🇬🇬": "GG", "🇬🇩": "GD", "🇬🇵": "GP", "🇬🇸": "GU", "🇭🇹": "HT", "🇭🇲": "HN", "🇭🇪": "HU", "🇰🇮": "KG", "🇰🇲": "LA", "🇱🇦": "LV", "🇱🇸": "LS", "🇱🇷": "LR", "🇲🇫": "ME", "🇲🇸": "MS", "🇲🇴": "MN", "🇲🇬": "MG", "🇲🇼": "MW", "🇲🇷": "MR", "🇲🇺": "MU", "🇳🇲": "NA", "🇳🇫": "NF", "🇳🇷": "NL", "🇳🇮": "NI", "🇳🇪": "NE", "🇳🇝": "NF", "🇴🇸": "OM", "🇸🇷": "SR", "🇸🇧": "SX", "🇸🇸": "BL", "🇸🇨": "ZA", "🇸🇱": "LK", "🇸🇵": "SD", "🇸🇭": "SH", "🇸🇹": "SY", "🇹🇨": "TW", "🇹🇬": "TG", "🇹🇱": "TK", "🇹🇴": "TO", "🇹🇻": "VI", "🇿🇶": "ZW", "🇧🇹": "BT", "🇧🇶": "BO", "🇨🇶": "CK", "🇨🇰": "CX", "🇩🇲": "DM", "🇩🇯": "DO", "🇪🇴": "SV", "🇪🇲": "GQ", "🇪🇶": "ER", "🇫🇴": "FO", "🇫🇯": "FX", "🇬🇶": "GF", "🇬🇳": "GN", "🇮🇴": "ID", "🇰🇵": "KP", "🇱🇴": "LT", "🇲🇶": "MQ", "🇳🇸": "NC", "🇵🇳": "PN", "🇵🇴": "WS", "🇸🇶": "RW", "🇹🇰": "TC", "🇹🇸": "TF", "🇹🇺": "TV", "🇺🇲": "WF", "🇺🇳": "EH", "🇻🇺": "VA"};
+            const reversed = {};
+            for (const [k,v] of Object.entries(map)) {
+                if (!reversed[v]) reversed[v] = k;
+            }
+            return reversed[code] || '🌐';
         }
-      }
-    }
-    document.getElementById('countryCount').textContent = countries.size;
 
-    const protos = new Set();
-    for (const line of lines) {
-      const proto = line.split('://')[0].split(':')[0];
-      protos.add(proto);
-    }
-    const container = document.getElementById('protocols');
-    container.innerHTML = '';
-    for (const p of protos) {
-      const el = document.createElement('span');
-      el.className = 'protocol';
-      el.textContent = p;
-      container.appendChild(el);
-    }
-  } catch {}
-}
-loadStats();
+        function renderProtocols() {
+            const el = document.getElementById('protocols');
+            const total = Object.values(protocols).reduce((a,b) => a+b, 0);
+            el.innerHTML = Object.entries(protocols)
+                .sort((a,b) => b[1] - a[1])
+                .map(([name, count]) => {
+                    const pct = (count / total * 100).toFixed(1);
+                    const color = PROTOCOL_COLORS[name] || '#6c5ce7';
+                    return `
+                        <div class="proto-chip" style="flex: ${count}; min-width: 120px;">
+                            <div>
+                                <div class="proto-name">${name}</div>
+                                <div class="proto-count">${count}</div>
+                                <div class="proto-bar" style="width: 100%;">
+                                    <div class="proto-bar-fill" style="width: ${pct}%; background: ${color};"></div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+        }
 
-function copySub() {
-  const input = document.getElementById('subUrl');
-  input.select();
-  navigator.clipboard.writeText(input.value).catch(() => {});
-  const toast = document.getElementById('toast');
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 2000);
-}
-</script>
+        function renderCountries() {
+            const el = document.getElementById('countries');
+            el.innerHTML = countries.map(c => {
+                const protoChips = Object.entries(c.protocols)
+                    .map(([p, n]) => `<span class="country-proto" style="background: ${PROTOCOL_COLORS[p] || '#6c5ce7'}22; color: ${PROTOCOL_COLORS[p] || '#6c5ce7'};">${p} ${n}</span>`)
+                    .join('');
+                return `
+                    <div class="country-card">
+                        <div class="country-flag">${getFlag(c.code)}</div>
+                        <div class="country-info">
+                            <div class="country-name">${c.name}</div>
+                            <div class="country-code">${c.code}</div>
+                            <div class="country-protocols">${protoChips}</div>
+                        </div>
+                        <div class="country-count">${c.total}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderSources() {
+            const el = document.getElementById('sources');
+            el.innerHTML = Object.entries(sources).map(([name, count]) => `
+                <div class="source-card">
+                    <div class="source-name">${name}</div>
+                    <div class="source-count">${count}</div>
+                </div>
+            `).join('');
+        }
+
+        renderProtocols();
+        renderCountries();
+        renderSources();
+    </script>
 </body>
 </html>

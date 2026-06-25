@@ -1,0 +1,27 @@
+{
+  "update_time": "2026-06-25 13:30:40",
+  "update_time_msk": "25.06.2026 13:30 MSK",
+  "total_configs": 2,
+  "total_raw": 266145,
+  "total_reachable": 2,
+  "total_unreachable": 266143,
+  "source_stats": {
+    "igareck": 269,
+    "ebrasha": 265876
+  },
+  "protocol_stats": {
+    "vless": 1,
+    "trojan": 1
+  },
+  "countries": [
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "total": 2,
+      "protocols": {
+        "vless": 1,
+        "trojan": 1
+      }
+    }
+  ]
+}

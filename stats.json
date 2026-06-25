@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-06-25 14:15:25",
-  "update_time_msk": "25.06.2026 14:15 MSK",
+  "update_time": "2026-06-25 14:26:03",
+  "update_time_msk": "25.06.2026 14:26 MSK",
   "total_configs": 264601,
   "total_raw": 264601,
   "total_reachable": 264601,
@@ -19,35 +19,25 @@
   },
   "countries": [
     {
-      "code": "BR",
-      "name": "Brazil",
-      "total": 264029,
+      "code": "XX",
+      "name": "XX",
+      "total": 264321,
       "protocols": {
         "hysteria2": 410,
         "tuic": 6,
-        "vless": 204571,
-        "vmess": 4014,
+        "vless": 204570,
+        "vmess": 4306,
         "trojan": 45141,
-        "ss": 9887
-      }
-    },
-    {
-      "code": "XX",
-      "name": "XX",
-      "total": 291,
-      "protocols": {
-        "vmess": 290,
-        "ss": 1
+        "ss": 9888
       }
     },
     {
       "code": "FI",
       "name": "Finland",
-      "total": 49,
+      "total": 48,
       "protocols": {
         "hysteria2": 42,
-        "vless": 6,
-        "vmess": 1
+        "vless": 6
       }
     },
     {
@@ -117,11 +107,11 @@
     {
       "code": "FR",
       "name": "France",
-      "total": 8,
+      "total": 7,
       "protocols": {
         "hysteria2": 4,
         "vless": 2,
-        "vmess": 2
+        "vmess": 1
       }
     },
     {
@@ -232,6 +222,14 @@
       "total": 1,
       "protocols": {
         "hysteria2": 1
+      }
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "total": 1,
+      "protocols": {
+        "vless": 1
       }
     },
     {

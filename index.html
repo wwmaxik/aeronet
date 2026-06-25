@@ -297,23 +297,23 @@
 
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value">0</div>
+                <div class="stat-value">264601</div>
                 <div class="stat-label">Live Configs</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">0</div>
+                <div class="stat-value">264601</div>
                 <div class="stat-label">Raw Parsed</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">0</div>
+                <div class="stat-value">30</div>
                 <div class="stat-label">Countries</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">0</div>
+                <div class="stat-value">6</div>
                 <div class="stat-label">Protocols</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">0%</div>
+                <div class="stat-value">100%</div>
                 <div class="stat-label">Uptime</div>
             </div>
         </div>
@@ -339,7 +339,7 @@
         </div>
 
         <div class="footer">
-            <p>Last updated: 25.06.2026 13:37 MSK</p>
+            <p>Last updated: 25.06.2026 14:15 MSK</p>
             <p>AeroNet Config Aggregator</p>
         </div>
     </div>
@@ -354,11 +354,11 @@
             tuic: '#00b894'
         };
 
-        const FLAGS = {};
+        const FLAGS = {"BR": "BR", "XX": "XX", "FI": "FI", "CA": "CA", "NL": "NL", "DE": "DE", "US": "US", "AR": "AR", "HK": "HK", "HU": "HU", "FR": "FR", "JP": "JP", "PL": "PL", "TR": "TR", "KH": "KH", "TV": "TV", "GB": "GB", "LV": "LV", "MY": "MY", "SC": "SC", "IN": "IN", "CH": "CH", "IS": "IS", "AC": "AC", "KR": "KR", "RU": "RU", "TW": "TW", "BG": "BG", "GR": "GR", "IE": "IE"};
 
-        const protocols = {};
-        const countries = [];
-        const sources = {"igareck": 0, "ebrasha": 0};
+        const protocols = {"hysteria2": 495, "tuic": 6, "vless": 204676, "vmess": 4317, "trojan": 45215, "ss": 9892};
+        const countries = [{"code": "BR", "name": "Brazil", "total": 264029, "protocols": {"hysteria2": 410, "tuic": 6, "vless": 204571, "vmess": 4014, "trojan": 45141, "ss": 9887}}, {"code": "XX", "name": "XX", "total": 291, "protocols": {"vmess": 290, "ss": 1}}, {"code": "FI", "name": "Finland", "total": 49, "protocols": {"hysteria2": 42, "vless": 6, "vmess": 1}}, {"code": "CA", "name": "Canada", "total": 42, "protocols": {"vless": 4, "trojan": 38}}, {"code": "NL", "name": "Netherlands", "total": 41, "protocols": {"hysteria2": 26, "vless": 15}}, {"code": "DE", "name": "Germany", "total": 32, "protocols": {"vless": 31, "vmess": 1}}, {"code": "US", "name": "United States", "total": 19, "protocols": {"vless": 10, "vmess": 3, "trojan": 2, "ss": 4}}, {"code": "AR", "name": "Argentina", "total": 17, "protocols": {"trojan": 17}}, {"code": "HK", "name": "Hong Kong", "total": 12, "protocols": {"hysteria2": 7, "vless": 1, "vmess": 4}}, {"code": "HU", "name": "Hungary", "total": 10, "protocols": {"vless": 10}}, {"code": "FR", "name": "France", "total": 8, "protocols": {"hysteria2": 4, "vless": 2, "vmess": 2}}, {"code": "JP", "name": "Japan", "total": 6, "protocols": {"vless": 1, "trojan": 5}}, {"code": "PL", "name": "Poland", "total": 5, "protocols": {"vless": 3, "trojan": 2}}, {"code": "TR", "name": "Turkey", "total": 5, "protocols": {"vless": 5}}, {"code": "KH", "name": "Cambodia", "total": 4, "protocols": {"hysteria2": 1, "vless": 3}}, {"code": "TV", "name": "TV", "total": 4, "protocols": {"hysteria2": 4}}, {"code": "GB", "name": "United Kingdom", "total": 4, "protocols": {"vless": 2, "vmess": 1, "trojan": 1}}, {"code": "LV", "name": "Latvia", "total": 3, "protocols": {"vless": 3}}, {"code": "MY", "name": "Malaysia", "total": 3, "protocols": {"vless": 3}}, {"code": "SC", "name": "SC", "total": 3, "protocols": {"vless": 3}}, {"code": "IN", "name": "India", "total": 3, "protocols": {"trojan": 3}}, {"code": "CH", "name": "Switzerland", "total": 2, "protocols": {"vless": 1, "trojan": 1}}, {"code": "IS", "name": "Iceland", "total": 2, "protocols": {"trojan": 2}}, {"code": "AC", "name": "AC", "total": 1, "protocols": {"hysteria2": 1}}, {"code": "KR", "name": "South Korea", "total": 1, "protocols": {"vless": 1}}, {"code": "RU", "name": "Russia", "total": 1, "protocols": {"vless": 1}}, {"code": "TW", "name": "Taiwan", "total": 1, "protocols": {"vmess": 1}}, {"code": "BG", "name": "Bulgaria", "total": 1, "protocols": {"trojan": 1}}, {"code": "GR", "name": "Greece", "total": 1, "protocols": {"trojan": 1}}, {"code": "IE", "name": "Ireland", "total": 1, "protocols": {"trojan": 1}}];
+        const sources = {"igareck": 269, "ebrasha": 264332};
 
         function getFlag(code) {
             const map = {"🇦🇱": "AC", "🇩🇿": "DZ", "🇦🇷": "AR", "🇦🇲": "AM", "🇦🇺": "AU", "🇦🇹": "AT", "🇦🇿": "ZZ", "🇧🇭": "BH", "🇧🇩": "BF", "🇧🇾": "BY", "🇧🇪": "BE", "🇧🇿": "BZ", "🇧🇴": "BO", "🇧🇦": "BA", "🇧🇷": "BR", "🇧🇳": "BN", "🇧🇬": "BG", "🇰🇭": "KW", "🇨🇦": "CA", "🇨🇱": "CL", "🇨🇳": "CG", "🇨🇴": "CN", "🇨🇷": "HR", "🇭🇷": "HM", "🇨🇺": "CU", "🇨🇾": "CY", "🇨🇿": "CZ", "🇩🇰": "DK", "🇪🇨": "EC", "🇪🇪": "EE", "🇪🇹": "ET", "🇫🇮": "FI", "🇫🇷": "FR", "🇬🇪": "GE", "🇩🇪": "DE", "🇬🇭": "GH", "🇬🇷": "GR", "🇬🇹": "GT", "🇭🇳": "HN", "🇭🇰": "HK", "🇭🇺": "HU", "🇮🇸": "IS", "🇮🇳": "IN", "🇮🇩": "ID", "🇮🇷": "IO", "🇮🇶": "IQ", "🇮🇪": "IE", "🇮🇱": "IL", "🇮🇹": "IT", "🇯🇲": "JM", "🇯🇵": "JP", "🇯🇴": "JO", "🇰🇿": "KZ", "🇰🇪": "KE", "🇰🇼": "KW", "🇰🇬": "KI", "🇱🇻": "LV", "🇱🇧": "LB", "🇱🇹": "LY", "🇱🇺": "LU", "🇲🇾": "MY", "🇲🇹": "MR", "🇲🇽": "MV", "🇲🇩": "MA", "🇲🇨": "MC", "🇲🇳": "MN", "🇲🇪": "ME", "🇲🇦": "MA", "🇲🇿": "MZ", "🇲🇲": "MD", "🇳🇵": "PF", "🇳🇱": "NL", "🇳🇿": "NZ", "🇳🇬": "NG", "🇲🇰": "MK", "🇳🇴": "NO", "🇴🇲": "OM", "🇵🇰": "PK", "🇵🇸": "PS", "🇵🇦": "PA", "🇵🇬": "PG", "🇵🇾": "PY", "🇵🇪": "PE", "🇵🇭": "PH", "🇵🇱": "PL", "🇵🇹": "PT", "🇶🇦": "QA", "🇷🇴": "RO", "🇷🇺": "RU", "🇸🇦": "RE", "🇸🇳": "KR", "🇷🇸": "RU", "🇸🇬": "SC", "🇸🇰": "SG", "🇸🇮": "SI", "🇸🇴": "SK", "🇿🇦": "ZA", "🇰🇷": "KR", "🇪🇸": "EC", "🇱🇰": "LR", "🇸🇩": "MF", "🇸🇪": "CH", "🇨🇭": "KH", "🇸🇾": "SY", "🇹🇼": "TV", "🇹🇯": "TJ", "🇹🇿": "TZ", "🇹🇭": "TH", "🇹🇹": "TT", "🇹🇳": "TN", "🇹🇷": "TR", "🇹🇲": "UM", "🇺🇬": "UG", "🇺🇦": "UA", "🇦🇪": "AE", "🇬🇧": "GB", "🇺🇸": "US", "🇺🇾": "UY", "🇺🇿": "UZ", "🇻🇪": "VE", "🇻🇳": "VN", "🇾🇪": "YE", "🇿🇼": "ZM", "🇪🇺": "EU", "🇦🇸": "AX", "🇦🇴": "AO", "🇦🇬": "AG", "🇦🇼": "AW", "🇧🇧": "BB", "🇧🇸": "BN", "🇨🇲": "CC", "🇨🇻": "CF", "🇨🇵": "CO", "🇨🇪": "CR", "🇨🇼": "CW", "🇩🇬": "DJ", "🇩🇴": "DK", "🇪🇷": "ER", "🇫🇰": "FJ", "🇬🇦": "GA", "🇬🇲": "GM", "🇬🇮": "GI", "🇬🇬": "GG", "🇬🇩": "GD", "🇬🇵": "GP", "🇬🇸": "GU", "🇭🇹": "HT", "🇭🇲": "HN", "🇭🇪": "HU", "🇰🇮": "KG", "🇰🇲": "LA", "🇱🇦": "LV", "🇱🇸": "LS", "🇱🇷": "LR", "🇲🇫": "ME", "🇲🇸": "MS", "🇲🇴": "MN", "🇲🇬": "MG", "🇲🇼": "MW", "🇲🇷": "MR", "🇲🇺": "MU", "🇳🇲": "NA", "🇳🇫": "NF", "🇳🇷": "NL", "🇳🇮": "NI", "🇳🇪": "NE", "🇳🇝": "NF", "🇴🇸": "OM", "🇸🇷": "SR", "🇸🇧": "SX", "🇸🇸": "BL", "🇸🇨": "ZA", "🇸🇱": "LK", "🇸🇵": "SD", "🇸🇭": "SH", "🇸🇹": "SY", "🇹🇨": "TW", "🇹🇬": "TG", "🇹🇱": "TK", "🇹🇴": "TO", "🇹🇻": "VI", "🇿🇶": "ZW", "🇧🇹": "BT", "🇧🇶": "BO", "🇨🇶": "CK", "🇨🇰": "CX", "🇩🇲": "DM", "🇩🇯": "DO", "🇪🇴": "SV", "🇪🇲": "GQ", "🇪🇶": "ER", "🇫🇴": "FO", "🇫🇯": "FX", "🇬🇶": "GF", "🇬🇳": "GN", "🇮🇴": "ID", "🇰🇵": "KP", "🇱🇴": "LT", "🇲🇶": "MQ", "🇳🇸": "NC", "🇵🇳": "PN", "🇵🇴": "WS", "🇸🇶": "RW", "🇹🇰": "TC", "🇹🇸": "TF", "🇹🇺": "TV", "🇺🇲": "WF", "🇺🇳": "EH", "🇻🇺": "VA"};

@@ -1,176 +1,159 @@
 {
-  "update_time": "2026-06-26 13:50:26",
-  "update_time_msk": "26.06.2026 13:50 MSK",
-  "total_configs": 270730,
-  "total_raw": 270730,
-  "total_reachable": 270730,
+  "update_time": "2026-06-26 17:50:59",
+  "update_time_msk": "26.06.2026 17:50 MSK",
+  "total_configs": 271778,
+  "total_raw": 271778,
+  "total_reachable": 271778,
   "total_unreachable": 0,
   "source_stats": {
-    "igareck": 410,
-    "ebrasha": 270320
+    "igareck": 313,
+    "ebrasha": 271465
   },
   "protocol_stats": {
-    "hysteria2": 638,
+    "hysteria2": 578,
     "tuic": 6,
-    "vless": 209361,
-    "vmess": 4325,
-    "trojan": 46463,
-    "ss": 9937
+    "vless": 210308,
+    "vmess": 4400,
+    "trojan": 46607,
+    "ss": 9879
   },
   "countries": [
     {
       "code": "XX",
       "name": "XX",
-      "total": 270311,
+      "total": 271458,
       "protocols": {
-        "hysteria2": 435,
+        "hysteria2": 436,
         "tuic": 6,
-        "vless": 209193,
-        "vmess": 4316,
-        "trojan": 46427,
-        "ss": 9934
-      }
-    },
-    {
-      "code": "RU",
-      "name": "Russia",
-      "total": 67,
-      "protocols": {
-        "hysteria2": 55,
-        "vless": 12
+        "vless": 210195,
+        "vmess": 4393,
+        "trojan": 46553,
+        "ss": 9875
       }
     },
     {
       "code": "FI",
       "name": "Finland",
-      "total": 61,
+      "total": 67,
       "protocols": {
-        "hysteria2": 53,
-        "vless": 8
+        "hysteria2": 58,
+        "vless": 9
       }
     },
     {
       "code": "NL",
       "name": "Netherlands",
-      "total": 51,
+      "total": 45,
       "protocols": {
-        "hysteria2": 41,
-        "vless": 10
-      }
-    },
-    {
-      "code": "US",
-      "name": "United States",
-      "total": 40,
-      "protocols": {
-        "hysteria2": 8,
-        "vless": 26,
-        "vmess": 3,
-        "ss": 3
+        "hysteria2": 38,
+        "vless": 7
       }
     },
     {
       "code": "CA",
       "name": "Canada",
-      "total": 33,
+      "total": 42,
       "protocols": {
-        "vless": 12,
-        "trojan": 21
-      }
-    },
-    {
-      "code": "PL",
-      "name": "Poland",
-      "total": 28,
-      "protocols": {
-        "hysteria2": 9,
-        "vless": 16,
-        "trojan": 3
-      }
-    },
-    {
-      "code": "GB",
-      "name": "United Kingdom",
-      "total": 23,
-      "protocols": {
-        "hysteria2": 14,
-        "vless": 9
-      }
-    },
-    {
-      "code": "DE",
-      "name": "Germany",
-      "total": 22,
-      "protocols": {
-        "hysteria2": 3,
-        "vless": 19
+        "vless": 15,
+        "trojan": 27
       }
     },
     {
       "code": "TV",
       "name": "TV",
-      "total": 14,
+      "total": 26,
       "protocols": {
-        "hysteria2": 14
+        "hysteria2": 26
       }
     },
     {
-      "code": "FR",
-      "name": "France",
-      "total": 13,
+      "code": "US",
+      "name": "United States",
+      "total": 26,
       "protocols": {
-        "vless": 13
-      }
-    },
-    {
-      "code": "LV",
-      "name": "Latvia",
-      "total": 9,
-      "protocols": {
-        "hysteria2": 1,
-        "vless": 8
+        "hysteria2": 2,
+        "vless": 17,
+        "vmess": 2,
+        "trojan": 1,
+        "ss": 4
       }
     },
     {
       "code": "AR",
       "name": "Argentina",
-      "total": 9,
+      "total": 18,
       "protocols": {
         "vless": 1,
-        "trojan": 8
+        "trojan": 17
       }
     },
     {
-      "code": "HK",
-      "name": "Hong Kong",
-      "total": 8,
+      "code": "DE",
+      "name": "Germany",
+      "total": 16,
       "protocols": {
         "hysteria2": 3,
-        "vmess": 4,
-        "trojan": 1
-      }
-    },
-    {
-      "code": "TR",
-      "name": "Turkey",
-      "total": 6,
-      "protocols": {
-        "vless": 5,
-        "vmess": 1
+        "vless": 13
       }
     },
     {
       "code": "KH",
       "name": "Cambodia",
+      "total": 16,
+      "protocols": {
+        "vless": 16
+      }
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "total": 14,
+      "protocols": {
+        "hysteria2": 8,
+        "vmess": 4,
+        "trojan": 2
+      }
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "total": 8,
+      "protocols": {
+        "vless": 8
+      }
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
       "total": 5,
       "protocols": {
-        "vless": 4,
-        "trojan": 1
+        "hysteria2": 1,
+        "vless": 4
       }
     },
     {
       "code": "JP",
       "name": "Japan",
+      "total": 5,
+      "protocols": {
+        "hysteria2": 1,
+        "vless": 3,
+        "trojan": 1
+      }
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "total": 5,
+      "protocols": {
+        "hysteria2": 2,
+        "vless": 1,
+        "trojan": 2
+      }
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
       "total": 4,
       "protocols": {
         "hysteria2": 1,
@@ -186,60 +169,52 @@
       }
     },
     {
-      "code": "CH",
-      "name": "Switzerland",
-      "total": 3,
+      "code": "TR",
+      "name": "Turkey",
+      "total": 4,
       "protocols": {
-        "hysteria2": 1,
-        "vless": 2
+        "vless": 3,
+        "vmess": 1
       }
     },
     {
-      "code": "AT",
-      "name": "Austria",
+      "code": "FR",
+      "name": "France",
       "total": 3,
       "protocols": {
         "vless": 3
       }
     },
     {
-      "code": "CZ",
-      "name": "Czech Republic",
-      "total": 2,
-      "protocols": {
-        "vless": 2
-      }
-    },
-    {
-      "code": "IO",
-      "name": "IO",
-      "total": 2,
-      "protocols": {
-        "vless": 2
-      }
-    },
-    {
-      "code": "NO",
-      "name": "Norway",
-      "total": 2,
-      "protocols": {
-        "vless": 2
-      }
-    },
-    {
       "code": "SC",
       "name": "SC",
-      "total": 2,
+      "total": 3,
       "protocols": {
-        "vless": 2
+        "vless": 3
       }
     },
     {
-      "code": "GR",
-      "name": "Greece",
+      "code": "IS",
+      "name": "Iceland",
       "total": 2,
       "protocols": {
         "trojan": 2
+      }
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "total": 1,
+      "protocols": {
+        "hysteria2": 1
+      }
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "total": 1,
+      "protocols": {
+        "hysteria2": 1
       }
     },
     {
@@ -251,8 +226,8 @@
       }
     },
     {
-      "code": "IE",
-      "name": "Ireland",
+      "code": "IO",
+      "name": "IO",
       "total": 1,
       "protocols": {
         "vless": 1
@@ -267,27 +242,19 @@
       }
     },
     {
-      "code": "TH",
-      "name": "Thailand",
+      "code": "GR",
+      "name": "Greece",
       "total": 1,
       "protocols": {
-        "vless": 1
+        "trojan": 1
       }
     },
     {
-      "code": "VN",
-      "name": "Vietnam",
+      "code": "MY",
+      "name": "Malaysia",
       "total": 1,
       "protocols": {
-        "vless": 1
-      }
-    },
-    {
-      "code": "TW",
-      "name": "Taiwan",
-      "total": 1,
-      "protocols": {
-        "vmess": 1
+        "trojan": 1
       }
     }
   ]

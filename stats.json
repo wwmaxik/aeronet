@@ -1,34 +1,34 @@
 {
-  "update_time": "2026-06-27 07:13:13",
-  "update_time_msk": "27.06.2026 07:13 MSK",
-  "total_configs": 275124,
-  "total_raw": 275124,
-  "total_reachable": 275124,
+  "update_time": "2026-06-27 07:21:44",
+  "update_time_msk": "27.06.2026 07:21 MSK",
+  "total_configs": 275152,
+  "total_raw": 275152,
+  "total_reachable": 275152,
   "total_unreachable": 0,
   "source_stats": {
     "igareck": 676,
-    "ebrasha": 274448
+    "ebrasha": 274476
   },
   "protocol_stats": {
-    "hysteria2": 705,
+    "hysteria2": 728,
     "tuic": 6,
-    "vless": 213098,
-    "vmess": 4370,
-    "trojan": 47028,
-    "ss": 9917
+    "vless": 213102,
+    "vmess": 4371,
+    "trojan": 47024,
+    "ss": 9921
   },
   "countries": [
     {
       "code": "XX",
       "name": "XX",
-      "total": 274438,
+      "total": 274466,
       "protocols": {
-        "hysteria2": 443,
+        "hysteria2": 466,
         "tuic": 6,
-        "vless": 212759,
-        "vmess": 4360,
-        "trojan": 46959,
-        "ss": 9911
+        "vless": 212763,
+        "vmess": 4361,
+        "trojan": 46955,
+        "ss": 9915
       }
     },
     {

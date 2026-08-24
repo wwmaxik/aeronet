@@ -1,32 +1,32 @@
 {
-  "update_time": "2026-08-24 04:29:16",
-  "update_time_msk": "24.08.2026 04:29 MSK",
-  "total_configs": 53655,
-  "total_raw": 53655,
-  "total_reachable": 53655,
+  "update_time": "2026-08-24 08:29:29",
+  "update_time_msk": "24.08.2026 08:29 MSK",
+  "total_configs": 54438,
+  "total_raw": 54438,
+  "total_reachable": 54438,
   "total_unreachable": 0,
   "source_stats": {
     "igareck": 254,
-    "ebrasha": 53401
+    "ebrasha": 54184
   },
   "protocol_stats": {
     "hysteria2": 141,
-    "vless": 35038,
-    "vmess": 2691,
-    "trojan": 6831,
-    "ss": 8954
+    "vless": 35766,
+    "vmess": 2724,
+    "trojan": 6816,
+    "ss": 8991
   },
   "countries": [
     {
       "code": "XX",
       "name": "XX",
-      "total": 53383,
+      "total": 54167,
       "protocols": {
         "hysteria2": 127,
-        "vless": 34813,
-        "vmess": 2658,
-        "trojan": 6831,
-        "ss": 8954
+        "vless": 35541,
+        "vmess": 2692,
+        "trojan": 6816,
+        "ss": 8991
       }
     },
     {
@@ -51,11 +51,11 @@
     {
       "code": "US",
       "name": "United States",
-      "total": 20,
+      "total": 19,
       "protocols": {
         "hysteria2": 1,
         "vless": 13,
-        "vmess": 6
+        "vmess": 5
       }
     },
     {

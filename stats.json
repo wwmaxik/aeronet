@@ -1,160 +1,130 @@
 {
-  "update_time": "2026-08-27 13:04:21",
-  "update_time_msk": "27.08.2026 13:04 MSK",
-  "total_configs": 56176,
-  "total_raw": 56176,
-  "total_reachable": 56176,
+  "update_time": "2026-08-27 17:05:24",
+  "update_time_msk": "27.08.2026 17:05 MSK",
+  "total_configs": 37134,
+  "total_raw": 37134,
+  "total_reachable": 37134,
   "total_unreachable": 0,
   "source_stats": {
-    "igareck": 329,
-    "ebrasha": 55847
+    "igareck": 258,
+    "ebrasha": 36876
   },
   "protocol_stats": {
-    "hysteria2": 205,
-    "vless": 37695,
-    "vmess": 2761,
-    "trojan": 6489,
-    "ss": 9026
+    "hysteria2": 118,
+    "vless": 22793,
+    "vmess": 2218,
+    "trojan": 5138,
+    "ss": 6867
   },
   "countries": [
     {
       "code": "XX",
       "name": "XX",
-      "total": 55808,
+      "total": 36862,
       "protocols": {
-        "hysteria2": 190,
-        "vless": 37391,
-        "vmess": 2713,
-        "trojan": 6488,
-        "ss": 9026
+        "hysteria2": 111,
+        "vless": 22568,
+        "vmess": 2183,
+        "trojan": 5133,
+        "ss": 6867
       }
     },
     {
       "code": "DE",
       "name": "Germany",
-      "total": 98,
+      "total": 52,
       "protocols": {
-        "vless": 93,
-        "vmess": 5
+        "hysteria2": 2,
+        "vless": 48,
+        "vmess": 2
       }
     },
     {
       "code": "NL",
       "name": "Netherlands",
-      "total": 40,
+      "total": 30,
       "protocols": {
-        "hysteria2": 2,
-        "vless": 37,
-        "vmess": 1
-      }
-    },
-    {
-      "code": "FR",
-      "name": "France",
-      "total": 33,
-      "protocols": {
-        "hysteria2": 1,
         "vless": 29,
-        "vmess": 3
-      }
-    },
-    {
-      "code": "GB",
-      "name": "United Kingdom",
-      "total": 31,
-      "protocols": {
-        "hysteria2": 4,
-        "vless": 23,
-        "vmess": 4
+        "vmess": 1
       }
     },
     {
       "code": "RU",
       "name": "Russia",
-      "total": 31,
+      "total": 28,
       "protocols": {
-        "hysteria2": 3,
         "vless": 25,
         "vmess": 3
       }
     },
     {
-      "code": "CA",
-      "name": "Canada",
-      "total": 24,
-      "protocols": {
-        "vless": 10,
-        "vmess": 14
-      }
-    },
-    {
-      "code": "FI",
-      "name": "Finland",
-      "total": 15,
-      "protocols": {
-        "vless": 15
-      }
-    },
-    {
       "code": "PL",
       "name": "Poland",
-      "total": 14,
+      "total": 27,
       "protocols": {
         "hysteria2": 1,
-        "vless": 13
-      }
-    },
-    {
-      "code": "TR",
-      "name": "Turkey",
-      "total": 9,
-      "protocols": {
-        "hysteria2": 2,
-        "vless": 6,
-        "vmess": 1
-      }
-    },
-    {
-      "code": "TH",
-      "name": "Thailand",
-      "total": 9,
-      "protocols": {
-        "vless": 9
+        "vless": 26
       }
     },
     {
       "code": "US",
       "name": "United States",
-      "total": 9,
+      "total": 24,
       "protocols": {
-        "vless": 4,
-        "vmess": 5
+        "hysteria2": 3,
+        "vless": 11,
+        "vmess": 5,
+        "trojan": 5
       }
     },
     {
-      "code": "AR",
-      "name": "Argentina",
-      "total": 8,
+      "code": "CA",
+      "name": "Canada",
+      "total": 21,
       "protocols": {
-        "vless": 8
+        "vless": 15,
+        "vmess": 6
       }
     },
     {
-      "code": "CH",
-      "name": "Switzerland",
-      "total": 8,
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "total": 14,
       "protocols": {
-        "vless": 8
+        "vless": 14
       }
     },
     {
-      "code": "SC",
-      "name": "SC",
-      "total": 7,
+      "code": "CY",
+      "name": "Cyprus",
+      "total": 13,
       "protocols": {
-        "hysteria2": 1,
-        "vless": 5,
-        "vmess": 1
+        "vless": 13
+      }
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "total": 11,
+      "protocols": {
+        "vless": 7,
+        "vmess": 4
+      }
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "total": 11,
+      "protocols": {
+        "vless": 11
+      }
+    },
+    {
+      "code": "CZ",
+      "name": "Czech Republic",
+      "total": 10,
+      "protocols": {
+        "vless": 10
       }
     },
     {
@@ -162,48 +132,40 @@
       "name": "Kazakhstan",
       "total": 7,
       "protocols": {
-        "vless": 6,
-        "vmess": 1
+        "vless": 7
+      }
+    },
+    {
+      "code": "AC",
+      "name": "AC",
+      "total": 6,
+      "protocols": {
+        "vless": 6
       }
     },
     {
       "code": "HK",
       "name": "Hong Kong",
-      "total": 7,
+      "total": 6,
       "protocols": {
-        "vmess": 7
+        "vmess": 6
       }
     },
     {
-      "code": "EE",
-      "name": "Estonia",
-      "total": 5,
+      "code": "TR",
+      "name": "Turkey",
+      "total": 4,
       "protocols": {
-        "vless": 5
+        "vless": 2,
+        "vmess": 2
       }
     },
     {
-      "code": "AM",
-      "name": "Armenia",
-      "total": 3,
-      "protocols": {
-        "vless": 3
-      }
-    },
-    {
-      "code": "NO",
-      "name": "Norway",
-      "total": 3,
-      "protocols": {
-        "vless": 3
-      }
-    },
-    {
-      "code": "KR",
-      "name": "South Korea",
+      "code": "FR",
+      "name": "France",
       "total": 2,
       "protocols": {
-        "vless": 2
+        "vmess": 2
       }
     },
     {
@@ -215,11 +177,27 @@
       }
     },
     {
-      "code": "AE",
-      "name": "United Arab Emirates",
+      "code": "KH",
+      "name": "Cambodia",
       "total": 1,
       "protocols": {
         "hysteria2": 1
+      }
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "total": 1,
+      "protocols": {
+        "vless": 1
+      }
+    },
+    {
+      "code": "SC",
+      "name": "SC",
+      "total": 1,
+      "protocols": {
+        "vmess": 1
       }
     },
     {
@@ -228,14 +206,6 @@
       "total": 1,
       "protocols": {
         "vmess": 1
-      }
-    },
-    {
-      "code": "LV",
-      "name": "Latvia",
-      "total": 1,
-      "protocols": {
-        "trojan": 1
       }
     }
   ]

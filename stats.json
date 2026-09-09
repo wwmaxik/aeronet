@@ -1,128 +1,104 @@
 {
-  "update_time": "2026-09-09 19:27:14",
-  "update_time_msk": "09.09.2026 19:27 MSK",
-  "total_configs": 36967,
-  "total_raw": 36967,
-  "total_reachable": 36967,
+  "update_time": "2026-09-09 23:27:16",
+  "update_time_msk": "09.09.2026 23:27 MSK",
+  "total_configs": 36570,
+  "total_raw": 36570,
+  "total_reachable": 36570,
   "total_unreachable": 0,
   "source_stats": {
-    "igareck": 197,
-    "ebrasha": 36770
+    "igareck": 110,
+    "ebrasha": 36460
   },
   "protocol_stats": {
-    "hysteria2": 176,
+    "hysteria2": 159,
     "tuic": 2,
-    "vless": 22342,
-    "vmess": 2561,
-    "trojan": 5033,
-    "ss": 6853
+    "vless": 21986,
+    "vmess": 2544,
+    "trojan": 5029,
+    "ss": 6850
   },
   "countries": [
     {
       "code": "XX",
       "name": "XX",
-      "total": 36718,
+      "total": 36415,
       "protocols": {
-        "hysteria2": 172,
+        "hysteria2": 152,
         "tuic": 2,
-        "vless": 22208,
-        "vmess": 2450,
-        "trojan": 5033,
-        "ss": 6853
+        "vless": 21953,
+        "vmess": 2429,
+        "trojan": 5029,
+        "ss": 6850
       }
     },
     {
       "code": "HK",
       "name": "Hong Kong",
-      "total": 94,
+      "total": 48,
       "protocols": {
-        "vless": 48,
-        "vmess": 46
-      }
-    },
-    {
-      "code": "FR",
-      "name": "France",
-      "total": 36,
-      "protocols": {
-        "vless": 34,
-        "vmess": 2
-      }
-    },
-    {
-      "code": "RU",
-      "name": "Russia",
-      "total": 21,
-      "protocols": {
-        "hysteria2": 3,
-        "vless": 15,
-        "vmess": 3
-      }
-    },
-    {
-      "code": "CA",
-      "name": "Canada",
-      "total": 21,
-      "protocols": {
-        "vmess": 21
+        "vmess": 48
       }
     },
     {
       "code": "DE",
       "name": "Germany",
+      "total": 21,
+      "protocols": {
+        "vless": 8,
+        "vmess": 13
+      }
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "total": 20,
+      "protocols": {
+        "vmess": 20
+      }
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
       "total": 19,
       "protocols": {
-        "vless": 7,
-        "vmess": 12
-      }
-    },
-    {
-      "code": "PL",
-      "name": "Poland",
-      "total": 19,
-      "protocols": {
-        "vless": 19
-      }
-    },
-    {
-      "code": "GB",
-      "name": "United Kingdom",
-      "total": 10,
-      "protocols": {
-        "vmess": 10
-      }
-    },
-    {
-      "code": "US",
-      "name": "United States",
-      "total": 9,
-      "protocols": {
-        "vmess": 9
-      }
-    },
-    {
-      "code": "EE",
-      "name": "Estonia",
-      "total": 6,
-      "protocols": {
-        "hysteria2": 1,
-        "vless": 5
-      }
-    },
-    {
-      "code": "TH",
-      "name": "Thailand",
-      "total": 6,
-      "protocols": {
-        "vless": 6
+        "hysteria2": 6,
+        "vless": 10,
+        "vmess": 3
       }
     },
     {
       "code": "NL",
       "name": "Netherlands",
-      "total": 3,
+      "total": 17,
       "protocols": {
+        "vless": 14,
         "vmess": 3
+      }
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "total": 12,
+      "protocols": {
+        "hysteria2": 1,
+        "vless": 1,
+        "vmess": 10
+      }
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "total": 11,
+      "protocols": {
+        "vmess": 11
+      }
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "total": 2,
+      "protocols": {
+        "vmess": 2
       }
     },
     {

@@ -1,6 +1,6 @@
 # profile-title: AeroNet
 # profile-update-interval: 4
-# Date/Time: 2026-09-18 / 18:59 (Moscow)
+# Date/Time: 2026-09-18 / 19:08 (Moscow)
 # Количество: 35041
 # =============================================
 hysteria2://3f63c86c-ac4a-4900-85cf-4fedf93c2ca5@91.240.86.70:24443?sni=hy.quattro-tech.ru#AeroNet LV 1/1

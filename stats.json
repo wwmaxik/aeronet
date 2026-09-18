@@ -1,32 +1,32 @@
 {
-  "update_time": "2026-09-18 18:35:20",
-  "update_time_msk": "18.09.2026 18:35 MSK",
-  "total_configs": 35309,
-  "total_raw": 35309,
-  "total_reachable": 35309,
+  "update_time": "2026-09-18 18:59:48",
+  "update_time_msk": "18.09.2026 18:59 MSK",
+  "total_configs": 35041,
+  "total_raw": 35041,
+  "total_reachable": 35041,
   "total_unreachable": 0,
   "source_stats": {
     "igareck": 216,
-    "ebrasha": 35093
+    "ebrasha": 34825
   },
   "protocol_stats": {
-    "hysteria2": 123,
-    "vless": 20808,
-    "vmess": 2778,
-    "trojan": 4799,
-    "ss": 6801
+    "hysteria2": 117,
+    "vless": 20595,
+    "vmess": 2775,
+    "trojan": 4770,
+    "ss": 6784
   },
   "countries": [
     {
       "code": "XX",
       "name": "XX",
-      "total": 34997,
+      "total": 34727,
       "protocols": {
-        "hysteria2": 113,
-        "vless": 20626,
-        "vmess": 2658,
-        "trojan": 4799,
-        "ss": 6801
+        "hysteria2": 107,
+        "vless": 20413,
+        "vmess": 2653,
+        "trojan": 4770,
+        "ss": 6784
       }
     },
     {
@@ -66,20 +66,20 @@
       }
     },
     {
+      "code": "US",
+      "name": "United States",
+      "total": 23,
+      "protocols": {
+        "vless": 8,
+        "vmess": 15
+      }
+    },
+    {
       "code": "IT",
       "name": "Italy",
       "total": 21,
       "protocols": {
         "vless": 21
-      }
-    },
-    {
-      "code": "US",
-      "name": "United States",
-      "total": 21,
-      "protocols": {
-        "vless": 8,
-        "vmess": 13
       }
     },
     {

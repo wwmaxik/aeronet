@@ -1,32 +1,32 @@
 {
-  "update_time": "2026-09-19 08:35:38",
-  "update_time_msk": "19.09.2026 08:35 MSK",
-  "total_configs": 35016,
-  "total_raw": 35016,
-  "total_reachable": 35016,
+  "update_time": "2026-09-19 08:52:55",
+  "update_time_msk": "19.09.2026 08:52 MSK",
+  "total_configs": 35271,
+  "total_raw": 35271,
+  "total_reachable": 35271,
   "total_unreachable": 0,
   "source_stats": {
     "igareck": 252,
-    "ebrasha": 34764
+    "ebrasha": 35019
   },
   "protocol_stats": {
-    "hysteria2": 115,
-    "vless": 20512,
-    "vmess": 2811,
-    "trojan": 4785,
-    "ss": 6793
+    "hysteria2": 121,
+    "vless": 20747,
+    "vmess": 2818,
+    "trojan": 4791,
+    "ss": 6794
   },
   "countries": [
     {
       "code": "XX",
       "name": "XX",
-      "total": 34658,
+      "total": 34914,
       "protocols": {
-        "hysteria2": 100,
-        "vless": 20329,
-        "vmess": 2652,
-        "trojan": 4784,
-        "ss": 6793
+        "hysteria2": 106,
+        "vless": 20564,
+        "vmess": 2660,
+        "trojan": 4790,
+        "ss": 6794
       }
     },
     {
@@ -49,21 +49,21 @@
       }
     },
     {
-      "code": "CA",
-      "name": "Canada",
-      "total": 34,
-      "protocols": {
-        "vless": 10,
-        "vmess": 23,
-        "trojan": 1
-      }
-    },
-    {
       "code": "HK",
       "name": "Hong Kong",
       "total": 34,
       "protocols": {
         "vmess": 34
+      }
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "total": 33,
+      "protocols": {
+        "vless": 10,
+        "vmess": 22,
+        "trojan": 1
       }
     },
     {
